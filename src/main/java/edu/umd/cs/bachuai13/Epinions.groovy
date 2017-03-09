@@ -157,7 +157,7 @@ inserter = data.getInserter(trusts, fullTrusts)
 InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "trusts.txt")
 
 // number of folds
-folds = 8
+folds = 2
 
 List<Partition> trustsPartitions = new ArrayList<Partition>(folds)
 List<Partition> knowsPartitions = new ArrayList<Partition>(folds)
