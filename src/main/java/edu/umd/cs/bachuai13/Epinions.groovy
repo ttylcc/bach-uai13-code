@@ -67,11 +67,11 @@ configGenerator.setModelTypes([modelType]);
  * "MPLE" (MaxPseudoLikelihood)
  * "MM" (MaxMargin)
  */
-configGenerator.setLearningMethods(["MLE", "MPLE", "MM"]);
+configGenerator.setLearningMethods(["MPLE"]);
 
 /* MLE/MPLE options */
-configGenerator.setVotedPerceptronStepCounts([100]);
-configGenerator.setVotedPerceptronStepSizes([(double) 5.0]);
+configGenerator.setVotedPerceptronStepCounts([10]);
+configGenerator.setVotedPerceptronStepSizes([(double) 1.0]);
 
 /* MM options */
 configGenerator.setMaxMarginSlackPenalties([(double) 0.1]);
