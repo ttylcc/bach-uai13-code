@@ -1,4 +1,5 @@
 CS249 Project
+
 ===============
 
 This is the CS249 course project, and the repository is forked from (https://github.com/stephenbach/bach-uai13-code), which is the code for "Hinge-loss Markov Random Fields: Convex Inference for Structured Prediction." Stephen H. Bach, Bert Huang, Ben London, and Lise Getoor. Uncertainty in Artificial Intelligence (UAI) 2013. 
