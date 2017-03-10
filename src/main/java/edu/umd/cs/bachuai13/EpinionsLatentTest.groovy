@@ -340,7 +340,7 @@ for (int fold = 0; fold < folds; fold++) {
 		/*
 		 * Weight learning
 		 */
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 5; i++) {
 			log.debug("Starting iteration {} e-step", i)
 			// e-step
 			latentDB = data.getDatabase(latentPartitions.get(fold), (Partition []) eStepReadPartitions.toArray())
