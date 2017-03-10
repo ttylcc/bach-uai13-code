@@ -28,20 +28,5 @@ Epinions
 This data set is a snowball sample from the Epinions trust data set
 (http://snap.stanford.edu/data/soc-sign-epinions.html).
 
-From the website:
-"This is who-trust-whom online social network of a a general consumer review site Epinions.com.
-Members of the site can decide whether to ''trust'' each other. All the trust relationships
-interact and form the Web of Trust which is then combined with review ratings to determine
-which reviews are shown to the user."
-
-Please cite the original data set as
-
-	@inproceedings{leskovec:chi10,
-		author = "Leskovec, Jure and Huttenlocher, Daniel and Kleinberg, Jon},
-		booktitle = "{28th ACM Conference on Human Factors in Computing Systems (CHI)}",
-		pages = "1361--1370",
-		title = "Signed Networks in Social Media",
-		year = "2010"
-	}
 
 
