@@ -48,7 +48,7 @@ import edu.umd.cs.psl.ui.loading.*
 import edu.umd.cs.psl.util.database.Queries
 
 
-ExperimentConfigGenerator configGenerator = new ExperimentConfigGenerator("epinions");
+ExperimentConfigGenerator configGenerator = new ExperimentConfigGenerator("wiki");
 
 def modelType = args[0];
 /*
