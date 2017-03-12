@@ -14,7 +14,7 @@ Python (>=2.7) are also required to process the results.
 PSL Library
 -----------
 The algorithms for these experiments are implemented in the PSL library, version 1.1
-(https://github.com/linqs/psl/tree/1.1). It will be downloaded by Maven automatically.
+(https://github.com/linqs/psl). It will be downloaded by Maven automatically.
 
 Executing
 ---------
