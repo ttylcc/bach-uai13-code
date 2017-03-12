@@ -67,7 +67,7 @@ configGenerator.setModelTypes([modelType]);
  * "MPLE" (MaxPseudoLikelihood)
  * "MM" (MaxMargin)
  */
-configGenerator.setLearningMethods(["MPLE"]);
+configGenerator.setLearningMethods(["MLE"]);
 
 /* MLE/MPLE options */
 configGenerator.setVotedPerceptronStepCounts([10]);
@@ -152,12 +152,12 @@ Partition fullTrusts = new Partition(1)
 def dataPath = "./data/wiki/"
 def inserter
 inserter = data.getInserter(knows, fullKnows)
-InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_knows.txt")
+InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_knows_500.txt")
 inserter = data.getInserter(trusts, fullTrusts)
-InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_trusts.txt")
+InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_trusts_500.txt")
 
 // number of folds
-folds = 3
+folds = 9
 
 List<Partition> trustsPartitions = new ArrayList<Partition>(folds)
 List<Partition> knowsPartitions = new ArrayList<Partition>(folds)
