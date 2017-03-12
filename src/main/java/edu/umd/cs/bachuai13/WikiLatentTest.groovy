@@ -167,9 +167,9 @@ Partition fullTrusts = new Partition(1)
 def dataPath = "./data/wiki/"
 def inserter
 inserter = data.getInserter(knows, fullKnows)
-InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_knows_500.txt")
+InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_knows_1000.txt")
 inserter = data.getInserter(trusts, fullTrusts)
-InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_trusts_500.txt")
+InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_trusts_1000.txt")
 
 // number of folds
 folds = 3

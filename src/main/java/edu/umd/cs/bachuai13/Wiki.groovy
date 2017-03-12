@@ -67,7 +67,7 @@ configGenerator.setModelTypes([modelType]);
  * "MPLE" (MaxPseudoLikelihood)
  * "MM" (MaxMargin)
  */
-configGenerator.setLearningMethods(["MLE"]);
+configGenerator.setLearningMethods(["MPLE"]);
 
 /* MLE/MPLE options */
 configGenerator.setVotedPerceptronStepCounts([10]);
@@ -157,7 +157,7 @@ inserter = data.getInserter(trusts, fullTrusts)
 InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_trusts_500.txt")
 
 // number of folds
-folds = 9
+folds = 3
 
 List<Partition> trustsPartitions = new ArrayList<Partition>(folds)
 List<Partition> knowsPartitions = new ArrayList<Partition>(folds)
