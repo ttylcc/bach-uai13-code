@@ -25,8 +25,7 @@ Data
 
 Wikipedia Requests for Adminship (with text)
 --------
-For a Wikipedia editor to become an administrator, a request for adminship (RfA) must be submitted, either by the candidate or by another community member. Subsequently, any Wikipedia member may cast a supporting, neutral, or opposing vote. This induces a directed, signed network in which nodes represent Wikipedia members and edges represent votes. In this sense, the present dataset is a more recent version of the Wikipedia adminship election data. However, there is also a rich textual component in RfAs, which was not included in the older version: each vote is typically accompanied by a short comment (median/mean: 19/34 tokens). A typical positive comment reads, "I've no concerns, will make an excellent addition to the admin corps", while an example of a negative comment is, "Little evidence of collaboration with other editors and limited content creation."
-(https://snap.stanford.edu/data/wiki-RfA.html).
+For a Wikipedia editor to become an administrator, a request for adminship (RfA) must be submitted, either by the candidate or by another community member. Subsequently, any Wikipedia member may cast a supporting, neutral, or opposing vote. Besides, there is also a rich textual component in RfAs: each vote is typically accompanied by a short comment. (https://snap.stanford.edu/data/wiki-RfA.html).
 
 
 
