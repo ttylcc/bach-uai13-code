@@ -96,10 +96,10 @@ for (ConfigBundle config : configs)
  * INITIALIZES DATASTORE AND MODEL
  */
 ConfigManager cm = ConfigManager.getManager();
-ConfigBundle baseConfig = cm.getBundle("epinions");
+ConfigBundle baseConfig = cm.getBundle("wiki");
 def defaultPath = System.getProperty("java.io.tmpdir") + "/"
 //def defaultPath = "/scratch0/bach-icml13/"
-String dbpath = baseConfig.getString("dbpath", defaultPath + "pslEpinions")
+String dbpath = baseConfig.getString("dbpath", defaultPath + "pslwiki")
 DataStore data = new RDBMSDataStore(new H2DatabaseDriver(Type.Disk, dbpath, true), baseConfig)
 
 PSLModel m = new PSLModel(this, data)
@@ -164,7 +164,7 @@ Partition fullTrusts = new Partition(1)
 /*
  * LOAD DATA
  */
-def dataPath = "./data/epinions/"
+def dataPath = "./data/wiki/"
 def inserter
 inserter = data.getInserter(knows, fullKnows)
 InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "knows.txt")
@@ -296,7 +296,7 @@ for (int fold = 0; fold < folds; fold++) {
 		}
 	}
 	System.out.println("Saw " + rv + " rvs and " + ob + " obs")
-	//	DataOutputter.outputPredicate("output/epinions/training-truth" + fold + ".directed" , labelsDB, trusts, ",", true, "Source,Target,TrueTrusts");
+	//	DataOutputter.outputPredicate("output/wiki/training-truth" + fold + ".directed" , labelsDB, trusts, ",", true, "Source,Target,TrueTrusts");
 	trainDB.close();
 	latentDB.close();
 
@@ -326,7 +326,7 @@ for (int fold = 0; fold < folds; fold++) {
 	Partition dummy = new Partition(99999)
 	Partition dummy2 = new Partition(19999)
 
-	//	DataOutputter.outputPredicate("output/epinions/training-truth" + fold + ".directed" , labelsDB, trusts, ",", true, "Source,Target,TrueTrusts");
+	//	DataOutputter.outputPredicate("output/wiki/training-truth" + fold + ".directed" , labelsDB, trusts, ",", true, "Source,Target,TrueTrusts");
 
 	for (int configIndex = 0; configIndex < configs.size(); configIndex++) {
 		ConfigBundle config = configs.get(configIndex);

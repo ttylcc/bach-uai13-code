@@ -95,9 +95,9 @@ for (ConfigBundle config : configs)
  * INITIALIZES DATASTORE AND MODEL
  */
 ConfigManager cm = ConfigManager.getManager();
-ConfigBundle baseConfig = cm.getBundle("epinions");
+ConfigBundle baseConfig = cm.getBundle("wiki");
 def defaultPath = System.getProperty("java.io.tmpdir")
-String dbpath = baseConfig.getString("dbpath", defaultPath + File.separator + "psl-epinions")
+String dbpath = baseConfig.getString("dbpath", defaultPath + File.separator + "psl-wiki")
 DataStore data = new RDBMSDataStore(new H2DatabaseDriver(Type.Disk, dbpath, true), baseConfig)
 PSLModel m = new PSLModel(this, data)
 
@@ -282,7 +282,7 @@ for (int fold = 0; fold < folds; fold++) {
 	Partition dummy2 = new Partition(19999)
 	Database labelsDB = data.getDatabase(dummy, [trusts] as Set, trainLabelPartition)
 	
-	DataOutputter.outputPredicate("output/epinions/training-truth" + fold + ".directed" , labelsDB, trusts, ",", true, "Source,Target,TrueTrusts");
+	DataOutputter.outputPredicate("output/wiki/training-truth" + fold + ".directed" , labelsDB, trusts, ",", true, "Source,Target,TrueTrusts");
 
 	for (int configIndex = 0; configIndex < configs.size(); configIndex++) {
 		ConfigBundle config = configs.get(configIndex);
