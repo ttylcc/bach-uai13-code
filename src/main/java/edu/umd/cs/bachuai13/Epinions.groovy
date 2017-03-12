@@ -149,12 +149,12 @@ Partition fullTrusts = new Partition(1)
 /*
  * LOAD DATA
  */
-def dataPath = "./data/epinions/"
+def dataPath = "./data/wiki/"
 def inserter
 inserter = data.getInserter(knows, fullKnows)
-InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "knows.txt")
+InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_knows.txt")
 inserter = data.getInserter(trusts, fullTrusts)
-InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "trusts.txt")
+InserterUtils.loadDelimitedDataTruth(inserter, dataPath + "wiki_trusts.txt")
 
 // number of folds
 folds = 3
