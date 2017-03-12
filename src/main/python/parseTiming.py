@@ -7,12 +7,6 @@ def getTime(method):
 
 # Defines files to read from
 files = {}
-files['citeseer.hlmrf-q'] = 'output/timing.citeseer.hlmrf-q.out'
-files['citeseer.hlmrf-l'] = 'output/timing.citeseer.hlmrf-l.out'
-files['citeseer.mrf'] = 'output/timing.citeseer.mrf.out'
-files['cora.hlmrf-q'] = 'output/timing.cora.hlmrf-q.out'
-files['cora.hlmrf-l'] = 'output/timing.cora.hlmrf-l.out'
-files['cora.mrf'] = 'output/timing.cora.mrf.out'
 files['epinions.hlmrf-q'] = 'output/timing.epinions.hlmrf-q.out'
 files['epinions.hlmrf-l'] = 'output/timing.epinions.hlmrf-l.out'
 files['epinions.mrf'] = 'output/timing.epinions.mrf.out'
@@ -58,11 +52,11 @@ print 'BEGIN TIMING RESULTS TABLE'
 print
 print '\\begin{tabular}{lrrr}'
 print '\\toprule'
-print ' & Citeseer & Cora & Epinions \\\\'
+print ' & Epinions & Epinions & Epinions \\\\'
 print '\midrule'
-print 'HL-MRF-Q & ' + getTime('citeseer.hlmrf-q') + ' & ' + getTime('cora.hlmrf-q') + ' & ' + getTime('epinions.hlmrf-q') + ' \\\\'
-print 'HL-MRF-L & ' + getTime('citeseer.hlmrf-l') + ' & ' + getTime('cora.hlmrf-l') + ' & ' + getTime('epinions.hlmrf-l') + ' \\\\'
-print 'MRF & ' + getTime('citeseer.mrf') + ' & ' + getTime('cora.mrf') + ' & ' + getTime('epinions.mrf') + ' \\\\'
+print 'HL-MRF-Q & ' + getTime('epinions.hlmrf-q') + ' & ' + getTime('epinions.hlmrf-q') + ' & ' + getTime('epinions.hlmrf-q') + ' \\\\'
+print 'HL-MRF-L & ' + getTime('epinions.hlmrf-l') + ' & ' + getTime('epinions.hlmrf-l') + ' & ' + getTime('epinions.hlmrf-l') + ' \\\\'
+print 'MRF & ' + getTime('epinions.mrf') + ' & ' + getTime('epinions.mrf') + ' & ' + getTime('epinions.mrf') + ' \\\\'
 print '\\bottomrule'
 print '\\end{tabular}'
 print
