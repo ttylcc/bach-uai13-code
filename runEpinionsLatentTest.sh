@@ -8,6 +8,5 @@ mkdir output > /dev/null
 echo "Running HL-MRF-Q on wiki..."
 java -Xmx8g -cp ./target/classes:`cat classpath.out` edu.umd.cs.bachuai13.WikiLatentTest quad > output/WikiLatentTest.hlmrf-q.out
 
-echo "Processing results..."
-# cd src/main/matlab
-# matlab -nodesktop -nosplash -r parse_wiki
+echo "echo Store output files..."
+
