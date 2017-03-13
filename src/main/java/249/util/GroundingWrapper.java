@@ -1,4 +1,4 @@
-package edu.umd.cs.bachuai13.util;
+package cs249.util;
 
 import org.apache.commons.lang.builder.HashCodeBuilder;
 

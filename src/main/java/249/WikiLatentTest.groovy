@@ -1,13 +1,13 @@
-package edu.umd.cs.bachuai13
+package cs249
 
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 import com.google.common.collect.Iterables
-import edu.umd.cs.bachuai13.util.ExperimentConfigGenerator;
-import edu.umd.cs.bachuai13.util.GroundingWrapper;
-import edu.umd.cs.bachuai13.util.FoldUtils;
-import edu.umd.cs.bachuai13.util.DataOutputter;
+import cs249.util.ExperimentConfigGenerator;
+import cs249.util.GroundingWrapper;
+import cs249.util.FoldUtils;
+import cs249.util.DataOutputter;
 import edu.umd.cs.psl.application.inference.MPEInference
 import edu.umd.cs.psl.application.learning.weight.maxlikelihood.MaxLikelihoodMPE
 import edu.umd.cs.psl.application.learning.weight.maxlikelihood.MaxPseudoLikelihood
