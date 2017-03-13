@@ -27,5 +27,9 @@ Wikipedia Requests for Adminship (with text)
 --------
 For a Wikipedia editor to become an administrator, a request for adminship (RfA) must be submitted, either by the candidate or by another community member. Subsequently, any Wikipedia member may cast a supporting, neutral, or opposing vote. Besides, there is also a rich textual component in RfAs: each vote is typically accompanied by a short comment. (https://snap.stanford.edu/data/wiki-RfA.html).
 
+Team
+===
+
+[Taoran Li](https://github.com/taoqi610), Ray Roman, [Zhihao Wu](https://github.com/ttylcc)
 
 
