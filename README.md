@@ -30,6 +30,6 @@ For a Wikipedia editor to become an administrator, a request for adminship (RfA)
 Team
 ===
 
-[Taoran Li](https://github.com/taoqi610), Ray Roman, [Zhihao Wu](https://github.com/ttylcc)
+@[Taoran Li](https://github.com/taoqi610), @Ray Roman, @[Zhihao Wu](https://github.com/ttylcc)
 
 
